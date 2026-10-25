@@ -1,6 +1,6 @@
 # ipv4.fr tools
 
-Network and web data tools for developers and AI agents: DNS, WHOIS, TLS certificates, email validation, IP geolocation, IP blacklists, HTTP headers, an AI domain security audit, page to Markdown and company profiles.
+Network and web data tools for developers and AI agents: DNS, WHOIS, TLS certificates, email validation, IP geolocation, IP blacklists, HTTP headers, an AI domain security audit, page and PDF to Markdown, and company profiles.
 
 Three ways to use them:
 
@@ -27,6 +27,7 @@ Base URL `https://ipv4.fr/x402/v1`. Network Base mainnet (`eip155:8453`), asset 
 | `GET /email/{email}` | 0.005 | syntax, MX, SMTP check, disposable and role detection |
 | `GET /markdown?url=` | 0.005 (0.01 with `summary=1`) | main content of a web page as clean Markdown |
 | `GET /company/{domain}` | 0.02 | company profile from its website: name, industry, products, location, public contact pages, tech |
+| `GET /pdf-markdown?url=` | 0.03 | text-based PDF (up to 20 pages, 20 MB) converted to clean Markdown with headings, lists and tables |
 | `GET /audit/{domain}` | 0.05 | AI security audit: 0-100 score, findings by severity, exact DNS and header fixes |
 
 Call without payment to get the `402 Payment Required` challenge:

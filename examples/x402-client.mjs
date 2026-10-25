@@ -18,6 +18,7 @@ const ROUTES = {
   audit: (q) => `/audit/${encodeURIComponent(q)}`,
   markdown: (q) => `/markdown?url=${encodeURIComponent(q)}`,
   company: (q) => `/company/${encodeURIComponent(q)}`,
+  pdf: (q) => `/pdf-markdown?url=${encodeURIComponent(q)}`,
 };
 
 const [tool, query] = process.argv.slice(2);
