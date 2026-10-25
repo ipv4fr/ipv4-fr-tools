@@ -1,0 +1,15 @@
+{
+  "name": "ipv4-fr-x402-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pay-per-call client example for the ipv4.fr x402 endpoints",
+  "scripts": {
+    "start": "node x402-client.mjs"
+  },
+  "dependencies": {
+    "@x402/evm": "2.28.0",
+    "@x402/fetch": "2.28.0",
+    "viem": "^2.48.11"
+  }
+}
